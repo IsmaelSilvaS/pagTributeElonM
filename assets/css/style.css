@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(45deg, #256ef5, black);
+}
+
+/*ANIMACOES*/
+
+@keyframes tesla {
+    0%{top:-300px;left:75vw}
+    75%{top:700px;left:75vw}
+    100%{top:-300px;left:75vw}
+}
+
+@keyframes spacex {
+    0%{top:-300px;left:25vw}
+    75%{top:700px;left:25vw}
+    100%{top:-300px;left:25vw}
+}
+
+@keyframes neura {
+    0%{left:-300px;top:700px}
+    75%{left:700px;top:700px}
+    100%{left:-300px;top:700px}
+}
+
+@keyframes solar {
+    0%{left:-300px;top:300px}
+    75%{left:700px;top:300px}
+    100%{left:-300px;top:300px}
+}
+
+.animationTesla, .animationSpaceX, .animationNeuraLink, .animationSolarCity{
+    width: 150px;
+    position: absolute;
+    top: -300px;
+}
+
+.animationTesla img, .animationSpaceX img, .animationNeuraLink img, .animationSolarCity img{
+    width: 100%;
+}
+
+.animationTesla{
+    animation-name: tesla;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-delay: 1.5s;
+}
+
+.animationSpaceX{
+    animation-name: spacex;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-delay: 3.2s;
+    animation-timing-function: ease-in-out;
+}
+
+.animationNeuraLink{
+    animation-name: neura;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-delay: 3.5s;
+    animation-timing-function: ease-out;
+}
+
+.animationSolarCity{
+    animation-name: solar;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+    animation-timing-function: ease;
+}
+
+article h1, h4{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 36px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+article h4{
+    font-size: 25px;
+}
+
+article .image{
+    height: 700px;
+    text-align: center;
+}
+
+article .image img{
+    height: 100%;
+}
+
+article p{
+    margin: 0 auto;
+    max-width: 700px;
+    font-size: 22px;
+    line-height: 30px;
+    border-bottom: 1px solid #000;
+}
+
+article .list{
+    display: flex;
+    justify-content: center;
+}
+
+article ul{
+    margin: 20px 0;
+    list-style: none;
+    text-align: justify;
+}
+
+article li{
+    margin-bottom: 5px;
+}
+
+article address{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+article address a{
+    text-decoration: none;
+    color: #aa0000;
+    font-size: 18px;
+    font-weight: bold;
+}
